@@ -8,9 +8,7 @@ class OneLayerNN(nn.Module):
         super().__init__()
         #self.flatten = nn.Flatten()
         self.model = nn.Sequential(
-            nn.Linear(2, 10),
-            nn.Sigmoid(),
-            nn.Linear(10, 1),
+            nn.Linear(2, 1),
             nn.Sigmoid()
         )
     def forward(self, x):
@@ -25,8 +23,6 @@ class TwoLayerNN(nn.Module):
         #self.flatten = nn.Flatten()
         self.model = nn.Sequential(
             nn.Linear(2, 20),
-            nn.ReLU(),
-            nn.Linear(20, 20),
             nn.ReLU(),
             nn.Linear(20, 1),
             nn.Sigmoid()
