@@ -95,7 +95,7 @@ output4 = [[1], [1], [0], [1]] # NOR
 output5 = [[0], [1], [0], [1]] # XOR
 
 
-#trainModel(OneLayerNN, output1)
+trainModel(OneLayerNN, output1)
 #trainModel(OneLayerNN, output2)
 #trainModel(OneLayerNN, output3)
 #trainModel(OneLayerNN, output4)
