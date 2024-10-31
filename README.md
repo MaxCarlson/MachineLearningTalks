@@ -1,6 +1,6 @@
 # Introduction to Machine Learning with Neural Networks
 
-This repository contains a Jupyter Notebook titled **Introduction to Machine Learning** that provides an overview of fundamental machine learning concepts, particularly neural networks. The notebook includes explanations, code examples, and visualizations, ideal for beginners exploring machine learning and deep learning.
+This repository contains a Jupyter Notebook **IntroToML.ipynb**, **Introduction to Machine Learning**, that provides an overview of fundamental machine learning concepts, particularly neural networks. The notebook includes explanations, code examples, and visualizations, ideal for beginners exploring machine learning and deep learning.
 
 ## Overview
 
@@ -33,6 +33,8 @@ Example:
 - **x<sub>i</sub>**: Individual input vector (of length M)
 - **y<sub>i</sub>**: Target output for each sample
 - **ŷ<sub>i</sub>**: Predicted output by the model for each input x<sub>i</sub>
+- **φ**: Represents the Activation Function
+- **L<sub>ce</sub>**: Cross Entropy Loss 
 
 ### Representations
 The model learns a function `f(x) = y`, attempting to approximate target values `y` for unseen data points by minimizing the error between predictions `ŷ` and actual targets `y`.
@@ -106,31 +108,16 @@ Training results include accuracy and loss metrics on test data after each epoch
 Test set: Avg. loss: 0.3261, Accuracy: 54380/60000 (91%)
 ```
 
-### Dependencies
-
-- Python 3.6+
-
-- PyTorch
-
-- torchvision
-
-- matplotlib
-
 
 Running the Notebook
 
 1. Clone the repository:
-
+```
 git clone https://github.com/YourUsername/IntroToML.git
 cd IntroToML
+```
 
-
-2. Install the dependencies:
-
-pip install -r requirements.txt
-
-
-3. Launch Jupyter Notebook and open IntroToML.ipynb:
+2. Launch Jupyter Notebook and open IntroToML.ipynb:
 ```
 jupyter notebook
 ```
